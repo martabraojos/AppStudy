@@ -19,7 +19,7 @@ import gzip
 # In[2]:
 
 
-f = gzip.open("C:/Users/Marta/Desktop/Bokio_datascience_data.gz", "rb")
+f = gzip.open("C:/Users/Marta/Desktop/AppDataScience_data.gz", "rb")
 print(type(f))
 
 
@@ -27,7 +27,7 @@ print(type(f))
 
 
 #Opening the file, it is a string 
-with gzip.open("C:/Users/Marta/Desktop/Bokio_datascience_data.gz", "rb") as f:
+with gzip.open("C:/Users/Marta/Desktop/AppDataScience_data.gz", "rb") as f:
     data = json.loads(json.dumps(f.read().decode("ascii")))
 type(data)
 
